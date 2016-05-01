@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Quinta Aplicacion</title>
+ 
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp4.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+ 
+<body onLoad="MM_preloadImages('imagenes/dia_de_la_tierra_by_kottejosh723-d3em2m1.jpg','imagenes/ASD.jpg','imagenes/ambiente.jpg','imagenes/factoresnaturales.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1 align="center">DIA DE LA TIERRA </h1>
+  </div>
+  <div data-role="main" class="ui-content">
+ <div>
+ <br>
+   <div align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/dia_de_la_tierra_by_kottejosh723-d3em2m1.jpg',1)"><img src="imagenes/ERT.jpg" width="330" height="317" id="Image10"></a></div>
+ </div>
+  </div>
+<div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>¿En que fecha se celebra el dia de la tierra?</h2>
+    <p>Descripcion</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>¿Porque se celebra?</h2>
+       <p>Descripcion</p>
+       </a>
+     </li>
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Cuidado del medio ambiente</h2>
+      <p>Descripcion</p>
+      </a>
+    </li>
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Calentamiento global</h2>
+      <p>Descripcion</p>
+      </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Tipos de contaminacion</h2>
+      <p>Descripcion</p>
+      </a>
+    </li>
+       <li class="ui-first-child ui-last-child">
+      <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>El medio ambiente en mi comunidad</h2>
+      <p>Descripcion</p>
+      </a>
+      </li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+     <h4>App5</h4>
+     <h4>Yelissa Valverde Cazahuatl</h4>
+     </div>
+</div>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>¿En que fecha se celebra el dia de la tierra?</h1>
+  </div>
+ <div data-role="content" align="center">
+  <div>
+     <h2>El Día de la Tierra es un día celebrado en muchos países el 22 de abril. Su promotor, el senador estadounidenseGaylord Nelson, instauró este día para crear una conciencia común a los problemas de la superpoblación, la producción de contaminación, la conservación de la biodiversidad y otras preocupaciones ambientales para proteger la Tierra.</h2>
+    <img src="imagenes/festeja.jpg" width="323" height="256"></div>
+ </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Yelissa Valverde Cazahuatl</h4>
+  </div>
+</div>
+</div>
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>¿Porque se celebra?</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>Es un día para rendir homenaje a nuestro planeta y reconocer a la Tierra como nuestro hogar y nuestra madre, así como lo han expresado distintas culturas a lo largo de la historia, demostrando la interdependencia entre sus ecosistemas y los seres vivos que la habitamos.</h2>
+ <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('imagen65','','imagenes/ambiente.jpg',1)"><img src="imagenes/0012762735.jpg" width="357" height="221" id="imagen65"></a></p>
+ </div>
+ </div>
+ 
+ <iframe width="450" height="315" src="https://www.youtube.com/embed/dlh4htYFIj0" frameborder="0" allowfullscreen></iframe>
+ <div data-role="collapsible" data-content-theme="false">
+ <h1>¿Desde cuando se celebra?</h1>
+ <h2>La primera manifestación tuvo lugar el 22 de abril de 1970, promovida por el senador y activista ambiental Gaylord Nelson, para la creación de una agencia ambiental. En esta convocatoria participaron dos mil universidades, diez mil escuelas (primarias y secundarias) y centenares de comunidades. La presión social tuvo sus logros y el gobierno de los Estados Unidos creó la Environmental Protection Agency (Agencia de Protección Ambiental) y una serie de leyes destinadas a la protección del medio ambiente.4
+En 1972 se celebró la primera conferencia internacional sobre el medio ambiente</h2>
+ <div align="center"><img src="imagenes/reciclaje.jpg" width="328" height="285"></div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+   <h4>Yelissa Valverde Cazahuatl</h4>
+ </div>
+ </div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Cuidado del medio ambiente</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>Cada persona tiene diferentes aspiraciones según su forma de ser y su nivel sociocultural. Pero existen algunas comunes a todos: vivienda digna, alimentación adecuada, educación, atención de la salud, un trabajo de acuerdo a las propias capacidades y momentos de recreación. Hoy se agrega otra que es la de vivir en un ambiente sano y equilibrado ecológicamente.
+Ultimamente ha comenzado a crecer el interés internacional por integrar las medidas de conservación ambiental a las políticas de crecimiento económico y social.</h2>
+ <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('imagen1345','','imagenes/factoresnaturales.jpg',1)"><img src="imagenes/tresr.jpg" width="388" height="196" id="imagen1345"></a></p>
+ </div>
+ <div data-role="collapsible" data-content-theme="false">
+   <h1>Medidas preventivas del cuidado del ambiente</h1>
+ <h2><p>Hoy en día, el efecto invernadero y el recalentamiento global se han convertido en problemas de impacto mundial; debido al mal uso que el hombre ha hecho de los recursos naturales. En este sentido, las empresas han dedicado parte de sus esfuerzos a la implementación de políticas ambientales y a la realización de actividades que tienen influencia en la preservación de la naturaleza de las comunidades cercanas. </p>
+
+<p>1.- Desconectar los aparatos electrónicos cuando no se estén usando. Por ejemplo: Computadoras, microondas, aires acondicionados, fotocopiadoras, impresoras, etc…</p> 
+
+<p>2.- Apagar las luces cuando se esté ausente de la oficina. Utilizar focos ahorradores de luz; éstos son más caros que los normales; pero duran hasta 8 veces más y consumen la quinta parte de la energía para dar la misma cantidad de luz que un bombillo normal. </p>
+
+<p>3.- Procurar utilizar pilas recargables o enchufar los aparatos a la red eléctrica. Si es inevitable el uso de pilas desechables, éstas no deben estar revueltas entre la basura. En lugar de ello, sepárelas y colóquelas en un recipiente aparte; ya que contienen sustancias químicas que son tóxicas. </p>
+
+<p>4.- Usar racionalmente el agua. Utilizar el agua caliente sólo de ser necesario. Instalar un filtro o garrafón de agua para ahorrar las botellas. No dejar las llaves abiertas para evitar el despilfarro, arreglar las goteras, reparar inmediatamente cualquier fuga y de ser posible reinvertir el agua para otras actividades. </p>
+
+<p>5.- Manejar menos y utilizar el transporte público. Otra buena opción, es caminar o usar otros medios de transporte que no contaminen. En caso de que sea imprescindible salir en el automóvil para ir al trabajo, compártelo con otros compañeros o vecinos. </p>
+
+<p>6.- Preguntarse si realmente se necesita un producto, antes de comprarlo. Cualquier consumo que no sea imprescindible es anti-ecológico. En caso de que este artículo sea indispensable, procure adquirir productos que contaminen menos el medio ambiente. </p>
+
+<p>7.- Reflexionar antes de arrojar cualquier cosa a la basura y verificar si se puede reutilizar, reciclar, reparar o si puede ser útil para otra persona.</p> 
+
+<p>8.- No derrochar artículos desechables como: servilletas, pañuelos, papel higiénico, etc… </p>
+
+<p>9.- Sustituir los vasos de plástico y cartón, los cuales son desechables, por tazas de cerámica o porcelana o vasos de vidrio que se puedan volver a emplear en otra ocasión. </p>
+
+<p>10.- Evitar usar envolturas de plástico y/o aluminio (Latas); en su lugar, utilice recipientes reusables o envases retornables. </p></h2>
+ <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/ASD.jpg',1)"><img src="imagenes/HM.jpg" width="258" height="195" id="Image9"></a></p>
+ </div>
+ 
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>Beneficios de cuidar el medio ambiente</h1>
+  <h2><p>Hay muchos beneficios en cuidar el medio ambiente, como por ejemplo ahorrar energía o dejar de contaminar. A continuación les dejare una lista de estos beneficios:</p>
+ <p>Ahorrar energía.</p>
+ <p>Reducir la contaminación del aire.</p>
+ <p>Reducir la contaminación del ambiente</p>
+ <p>Ayudar a vivir en un ambiente más limpio y sano.</p>
+ <p>Reducir el crecimiento del agujero de la capa de ozono.</p>
+ <p>Dejar de extinguir animales.</p>
+ <p>Ampliar el hábitat de animales.</p>
+ <p><img src="imagenes/reciclaje1.jpg" width="289" height="239"></p>
+  </h2>
+  </div>
+  
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Yelissa Valverde Cazahuatl</h4>
+ </div>
+ </div>
+ </div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Calentamiento global</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>El término Calentamiento Global se refiere al aumento gradual de las temperaturas de la atmósfera y océanos de la Tierra que se ha detectado en la actualidad, además de su continuo aumento que se proyecta a futuro.
+Nadie pone en duda el aumento de la temperatura global, lo que todavía genera controversia es la fuente y razón de este aumento de la temperatura. Aún así, la mayor parte de la comunidad científica asegura que hay más que un 90% de certeza que el aumento se debe al aumento de las concentraciones de gases de efecto invernadero por las actividades humanas que incluyen deforestación y la quema de combustibles fósiles como el petróleo y el carbón. Estas conclusiones son avaladas por las academias de ciencia de la mayoría de los países industrializados.
+</h2>
+ <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image89','','imagenes/contaminacion.jpg',0)"><img src="imagenes/factores.jpg" width="400" height="336" id="Image89"></a></p>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+ <h4>Yelissa Valverde Cazahuatl</h4>
+ </div>
+ </div>
+ </div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Tipos de contaminacion</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2><p>Diferentes tipos de contaminación están clasificados por su parte que afectan o resultan por las causas de contaminación particulares. Cada uno de estos tipos tiene sus propias causas y consecuencias distintivas. El estudio de la contaminación ambiental ayuda a entender los conceptos básicos con mayor detalle y producir protocolos para los tipos específicos. En consecuencia, los principales tipos de contaminación son:</p>
+ <p>Contaminación del Agua</p>
+ <p>Contaminación del Aire</p>
+ <p>Contaminación del Suelo</p>
+ <p>Contaminación Térmica</p>
+ <p>La Contaminación radiactiva</p>
+ <p>Contaminación Acústica</p>
+ <p>Contaminación Lumínica</p>
+ <p><img src="imagenes/medioambiente1.jpg" width="374" height="176"></p>
+ </h2></div>
+ </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+ <h4>Yelissa Valverde Cazahuatl</h4>
+ </div>
+ </div>
+ </div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>El medio ambiente en mi comunidad</h1>
+  </div>
+ <div data-role="content" align="center">
+  <div>
+     <h2>En mi comunidad por el lugar donde vivo pasan muchos carres grandes,los de volveo,trailers,los de turismo y los de transporte publico,estos carros contaminan mucho el aire</h2>
+     <h2><p>SOLUCIONES</p></h2>
+     <h3>
+     <p>Ponerse de acuerdo con la junta auxiliar,para que hablen con los encargados de los trabajadores y puedan solucionar eso para que no sigan pasando 
+  </p>
+     <p>&nbsp;</p>
+     <iframe src="visor1/index.html" style="width:960px;height:180px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Yelissa Valverde Cazahuatl</h4>
+  </div>
+</div>
+</div>
+
+</body>
+ </html>
